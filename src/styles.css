@@ -1,3 +1,72 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    font-size: 30px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content {
+    background-color: grey;
+    flex-grow: 1;
+    
+}
+
+.battle-area {
+    background-color: grey;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.left-side,
+.right-side {
+    background-color: white;
+    margin: 50px;
+    flex-grow: 1;
+}
+
+.left-board,
+.right-board {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    background-color: aqua;
+}
+
+.cell {
+    background-color: white;
+    border: solid red 1px;
+    aspect-ratio: 1 / 1;
+}
+
+.cell.miss{
+    background-color: black;
+}
+
+.cell.hit {
+    background-color: red;
+}
+
+.divider {
+    width: 5px;
+    background: grey;
+}
+
+.footer {
+    background-color: orange;
+    height: 50px;
 }

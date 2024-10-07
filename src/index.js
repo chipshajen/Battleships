@@ -1,5 +1,6 @@
 const { Player } = require("./player.js") 
 const { Ship } = require("./ship.js")
+const { renderBoard } = require("./domController.js")
 import "./styles.css"
 
 const boardSize = 8
@@ -10,7 +11,8 @@ const secondPlayer = new Player(false, boardSize)
 placePredetermindShips(firstPlayer)
 placePredetermindShips(secondPlayer)
 
-console.log(firstPlayer.board)
+renderBoard(firstPlayer.board, 'first')
+renderBoard(secondPlayer.board, 'second')
 
 function placePredetermindShips(player){
     const ships = []
