@@ -8,7 +8,7 @@ class Ship{
 
     hit(){
         this.hitsTaken++;
-        console.log(`This ship has been hit ${this.hitsTaken} times!`)
+        // console.log(`This ship has been hit ${this.hitsTaken} times!`)
     }
 
     isSunk(){
