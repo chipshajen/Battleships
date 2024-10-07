@@ -1,5 +1,6 @@
-const { Player } = require("./player") 
-const { Ship } = require("./ship")
+const { Player } = require("./player.js") 
+const { Ship } = require("./ship.js")
+import "./styles.css"
 
 const boardSize = 8
 
